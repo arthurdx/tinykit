@@ -59,4 +59,20 @@ bool ends_with(std::string_view s, std::string_view suffix) {
     return s.size() >= suffix.size() && s.substr(s.size() - suffix.size()) == suffix;
 }
 
+std::string replace_all(std::string_view s, std::string_view from, std::string_view to) {
+    if (from.empty()) return std::string(s);
+    std::string out;
+    std::size_t start = 0;
+    while (true) {
+        std::size_t pos = s.find(from, start);
+        if (pos == std::string_view::npos) {
+            out.append(s.substr(start));
+            return out;
+        }
+        out.append(s.substr(start, pos - start));
+        out.append(to);
+        start = pos + from.size();
+    }
+}
+
 }  // namespace tinykit
