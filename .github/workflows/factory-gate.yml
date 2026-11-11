@@ -2,6 +2,7 @@ name: Factory gate
 
 on:
   pull_request:
+    # "edited" re-runs the check when the PR description changes.
     types: [opened, synchronize, reopened, edited]
 
 permissions:
@@ -12,13 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: PR body has required sections
+      - uses: actions/checkout@v4
+      - name: PR body has required sections with content
         env:
-          BODY: ${{ github.event.pull_request.body }}
-        run: |
-          for s in "## Acceptance criteria" "## Verified" "## NOT verified"; do
-            if ! printf '%s' "$BODY" | grep -qF "$s"; then
-              echo "::error::PR description is missing section: $s"
-              exit 1
-            fi
-          done
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: python3 .github/scripts/check_pr_body.py
