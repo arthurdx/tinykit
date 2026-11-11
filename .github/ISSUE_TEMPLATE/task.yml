@@ -1,0 +1,31 @@
+name: Task
+description: Single entry point for work (human or agent created)
+labels: ["triage"]
+body:
+  - type: textarea
+    id: intent
+    attributes:
+      label: Intent
+      description: What outcome do you want and why? One paragraph.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkable bullets. The agent must address each one.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / links
+      description: Relevant docs, files, prior issues.
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source
+      options: [web, chat, agent, alert]
+    validations:
+      required: true

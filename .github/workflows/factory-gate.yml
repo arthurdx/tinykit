@@ -1,0 +1,23 @@
+name: Factory gate
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: PR body has required sections
+        env:
+          BODY: ${{ github.event.pull_request.body }}
+        run: |
+          for s in "## Acceptance criteria" "## Verified" "## NOT verified"; do
+            if ! printf '%s' "$BODY" | grep -qF "$s"; then
+              echo "::error::PR description is missing section: $s"
+              exit 1
+            fi
+          done
