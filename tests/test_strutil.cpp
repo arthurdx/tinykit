@@ -38,3 +38,14 @@ TEST(strutil, prefix_suffix) {
     CHECK(ends_with("foo", ""));
     CHECK(!ends_with("ar", "bar"));
 }
+
+TEST(strutil, replace_all) {
+    CHECK_EQ(replace_all("a-b-c", "-", "+"), std::string("a+b+c"));
+    CHECK_EQ(replace_all("aaa", "a", "aa"), std::string("aaaaaa"));
+    CHECK_EQ(replace_all("aaaa", "aa", "b"), std::string("bb"));
+    CHECK_EQ(replace_all("hello world", "world", ""), std::string("hello "));
+    CHECK_EQ(replace_all("abc", "x", "y"), std::string("abc"));
+    CHECK_EQ(replace_all("", "a", "b"), std::string(""));
+    CHECK_EQ(replace_all("abc", "", "x"), std::string("abc"));
+    CHECK_EQ(replace_all("", "", "x"), std::string(""));
+}

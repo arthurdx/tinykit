@@ -23,4 +23,8 @@ std::string to_upper(std::string_view s);
 bool starts_with(std::string_view s, std::string_view prefix);
 bool ends_with(std::string_view s, std::string_view suffix);
 
+// Replace every non-overlapping occurrence of from with to, scanning left to right.
+// Empty from returns s unchanged: replace_all("abc", "", "x") -> "abc".
+std::string replace_all(std::string_view s, std::string_view from, std::string_view to);
+
 }  // namespace tinykit
