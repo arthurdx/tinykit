@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/arthur/Projects/tinykit/build",
+  "command": "/usr/bin/c++  -I/home/arthur/Projects/tinykit/include -g -std=c++17 -Wall -Wextra -Wpedantic -Wconversion -Werror -o CMakeFiles/tinykit.dir/src/strutil.cpp.o -c /home/arthur/Projects/tinykit/src/strutil.cpp",
+  "file": "/home/arthur/Projects/tinykit/src/strutil.cpp",
+  "output": "CMakeFiles/tinykit.dir/src/strutil.cpp.o"
+},
+{
+  "directory": "/home/arthur/Projects/tinykit/build",
+  "command": "/usr/bin/c++  -I/home/arthur/Projects/tinykit/include -g -std=c++17 -Wall -Wextra -Wpedantic -Wconversion -Werror -o CMakeFiles/tinykit.dir/src/arg_parser.cpp.o -c /home/arthur/Projects/tinykit/src/arg_parser.cpp",
+  "file": "/home/arthur/Projects/tinykit/src/arg_parser.cpp",
+  "output": "CMakeFiles/tinykit.dir/src/arg_parser.cpp.o"
+},
+{
+  "directory": "/home/arthur/Projects/tinykit/build",
+  "command": "/usr/bin/c++  -I/home/arthur/Projects/tinykit/include -g -std=c++17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/tinykit_tests.dir/tests/main.cpp.o -c /home/arthur/Projects/tinykit/tests/main.cpp",
+  "file": "/home/arthur/Projects/tinykit/tests/main.cpp",
+  "output": "CMakeFiles/tinykit_tests.dir/tests/main.cpp.o"
+},
+{
+  "directory": "/home/arthur/Projects/tinykit/build",
+  "command": "/usr/bin/c++  -I/home/arthur/Projects/tinykit/include -g -std=c++17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/tinykit_tests.dir/tests/test_strutil.cpp.o -c /home/arthur/Projects/tinykit/tests/test_strutil.cpp",
+  "file": "/home/arthur/Projects/tinykit/tests/test_strutil.cpp",
+  "output": "CMakeFiles/tinykit_tests.dir/tests/test_strutil.cpp.o"
+},
+{
+  "directory": "/home/arthur/Projects/tinykit/build",
+  "command": "/usr/bin/c++  -I/home/arthur/Projects/tinykit/include -g -std=c++17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/tinykit_tests.dir/tests/test_ring_buffer.cpp.o -c /home/arthur/Projects/tinykit/tests/test_ring_buffer.cpp",
+  "file": "/home/arthur/Projects/tinykit/tests/test_ring_buffer.cpp",
+  "output": "CMakeFiles/tinykit_tests.dir/tests/test_ring_buffer.cpp.o"
+},
+{
+  "directory": "/home/arthur/Projects/tinykit/build",
+  "command": "/usr/bin/c++  -I/home/arthur/Projects/tinykit/include -g -std=c++17 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/tinykit_tests.dir/tests/test_arg_parser.cpp.o -c /home/arthur/Projects/tinykit/tests/test_arg_parser.cpp",
+  "file": "/home/arthur/Projects/tinykit/tests/test_arg_parser.cpp",
+  "output": "CMakeFiles/tinykit_tests.dir/tests/test_arg_parser.cpp.o"
+}
+]

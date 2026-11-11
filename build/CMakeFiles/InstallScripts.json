@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/arthur/Projects/tinykit/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

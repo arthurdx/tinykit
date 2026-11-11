@@ -5,7 +5,7 @@ Each item is sized to be one small, independently reviewable change. Items marke
 
 ## Features
 
-- [ ] **strutil: `replace_all(s, from, to)`.** Empty `from` should return `s` unchanged.
+- [x] **strutil: `replace_all(s, from, to)`.** Empty `from` should return `s` unchanged.
 - [ ] **strutil: `split(s, std::string_view delim)` overload** for multi-character delimiters.
 - [ ] **RingBuffer: const iterators** (`begin()`/`end()`, oldest to newest) so range-for works.
 - [ ] **RingBuffer: `emplace()`** to construct in place.

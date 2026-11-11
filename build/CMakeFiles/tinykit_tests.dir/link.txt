@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/tinykit_tests.dir/link.d CMakeFiles/tinykit_tests.dir/tests/main.cpp.o CMakeFiles/tinykit_tests.dir/tests/test_strutil.cpp.o CMakeFiles/tinykit_tests.dir/tests/test_ring_buffer.cpp.o CMakeFiles/tinykit_tests.dir/tests/test_arg_parser.cpp.o -o tinykit_tests  libtinykit.a

@@ -1,0 +1,38 @@
+Start testing: Nov 11 17:53 -03
+----------------------------------------------------------
+1/1 Testing: tinykit_tests
+1/1 Test: tinykit_tests
+Command: "/home/arthur/Projects/tinykit/build/tinykit_tests"
+Directory: /home/arthur/Projects/tinykit/build
+"tinykit_tests" start time: Nov 11 17:53 -03
+Output:
+----------------------------------------------------------
+[ OK ] strutil.trim
+[ OK ] strutil.split
+[ OK ] strutil.join
+[ OK ] strutil.case_conversion
+[ OK ] strutil.prefix_suffix
+[ OK ] strutil.replace_all
+[ OK ] ring_buffer.starts_empty
+[ OK ] ring_buffer.zero_capacity_throws
+[ OK ] ring_buffer.fifo_order
+[ OK ] ring_buffer.overwrites_oldest_when_full
+[ OK ] ring_buffer.wraps_around_after_pops
+[ OK ] ring_buffer.bounds_checked_access
+[ OK ] ring_buffer.clear_resets
+[ OK ] arg_parser.defaults_when_absent
+[ OK ] arg_parser.flag_and_inline_value
+[ OK ] arg_parser.separate_value
+[ OK ] arg_parser.positionals_and_double_dash
+[ OK ] arg_parser.errors
+[ OK ] arg_parser.usage_lists_options
+19/19 tests passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"tinykit_tests" end time: Nov 11 17:53 -03
+"tinykit_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 11 17:53 -03

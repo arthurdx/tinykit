@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtinykit.a CMakeFiles/tinykit.dir/src/strutil.cpp.o CMakeFiles/tinykit.dir/src/arg_parser.cpp.o
+/usr/bin/ranlib libtinykit.a
